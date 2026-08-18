@@ -114,19 +114,31 @@ section h2 {
 #Skills ul {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 15px;
     list-style: none;
     padding: 0;
+    margin: 25px 0 0 0;
 }
 
 #Skills li {
-    background-color: #d9edf5;
-    padding: 12px 20px;
-    border-radius: 20px;
-    font-weight: bold;
+    background-color: #b9e3f2;
     color: #173f52;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #8bc9df;
+    box-shadow: 0 3px 8px rgba(23, 63, 82, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+#Skills li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(23, 63, 82, 0.25);
+}
+
 
 #Projects {
     text-align: center;
