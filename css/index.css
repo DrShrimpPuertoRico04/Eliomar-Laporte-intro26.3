@@ -245,7 +245,7 @@ section h2 {
   }
 }
 
-#projects ul {
+#Projects ul {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -253,7 +253,7 @@ section h2 {
   padding: 0;
 }
 
-#projects li {
+#Projects li {
   background-color: #f0f0f0;
   padding: 1rem;
   border-radius: 8px;
@@ -262,12 +262,13 @@ section h2 {
 }
 
 @media (max-width: 600px) {
-  #projects ul {
+  #Projects ul {
     flex-direction: column;
   }
 
-  #projects li {
+  #Projects li {
     width: 100%;
     box-sizing: border-box;
   }
 }
+

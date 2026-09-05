@@ -71,6 +71,9 @@ messageForm.addEventListener('submit', function(event) {
   messageForm.reset();
 });
 
+const projectSection = document.querySelector('#Projects');
+const projectList = projectSection.querySelector('ul');
+
 fetch('https://api.github.com/users/DrShrimpPuertoRico04/repos')
   .then(function(response) {
     return response.json();
@@ -79,9 +82,6 @@ fetch('https://api.github.com/users/DrShrimpPuertoRico04/repos')
     const repositories = data;
 
     console.log(repositories);
-
-    const projectSection = document.querySelector('#projects');
-    const projectList = projectSection.querySelector('ul');
 
     for (let i = 0; i < repositories.length; i++) {
       const project = document.createElement('li');
@@ -93,5 +93,7 @@ fetch('https://api.github.com/users/DrShrimpPuertoRico04/repos')
   })
   .catch(function(error) {
     console.error('Error fetching repositories:', error);
+    projectSection.innerHTML += '<p>Unable to load projects. Please try again later.</p>';
   });
+
 
