@@ -176,3 +176,71 @@ section h2 {
 #Connect a:hover {
     background-color: #245a70;
 }
+
+#leave_message {
+  margin-top: 2rem;
+}
+
+#leave_message form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+#leave_message label {
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+#leave_message input,
+#leave_message textarea {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#leave_message textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+#leave_message button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#messages {
+  margin-top: 2rem;
+}
+
+#messages li {
+  margin-bottom: 1rem;
+}
+
+#messages button {
+  margin-left: 1rem;
+  padding: 0.4rem 0.75rem;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  #leave_message input,
+  #leave_message textarea,
+  #leave_message button {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 44px;
+  }
+
+  #leave_message textarea {
+    min-height: 120px;
+  }
+
+  #messages button {
+    min-height: 44px;
+    padding: 0.5rem 1rem;
+  }
+}

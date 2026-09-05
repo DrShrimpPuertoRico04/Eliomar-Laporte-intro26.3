@@ -17,6 +17,9 @@
         <h1>Eliomar Laporte</h1>
 
         <nav>
+         
+         <a href="#leave_message">Leave a Message</a>   
+  
             <ul>
                 <li><a href="#About">About</a></li>
                 <li><a href="#Experience">Experience</a></li>
@@ -134,7 +137,38 @@
         </section>
 
         </main>
+<section id="leave_message">
+  <h2>Leave a Message</h2>
 
-    <script src="js/index.js"></script>
+  <form name="leave_message">
+    <label for="usersName">Name:</label>
+    <input type="text" name="usersName" id="usersName" required>
+
+    <br>
+
+    <label for="usersEmail">Email:</label>
+    <input type="email" name="usersEmail" id="usersEmail" required>
+
+    <br>
+
+    <label for="usersMessage">Message:</label>
+    <textarea name="usersMessage" id="usersMessage" required></textarea>
+
+    <br>
+
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<section id="messages">
+  <h2>Messages</h2>
+  <ul></ul>
+</section>
+
+<script src="js/index.js"></script>
+
+
 </body>
 </html>
+
+
