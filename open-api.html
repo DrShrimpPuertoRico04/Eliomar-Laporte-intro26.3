@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Weather information using a public API">
+    <meta name="author" content="Eliomar Laporte">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Dashboard | Eliomar Laporte</title>
+
+    <link rel="stylesheet" href="css/open-api.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Eliomar Laporte's Weather Dashboard</h1>
+
+        <nav>
+            <a href="index.html">Back to Portfolio</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="intro">
+            <h2>Weather Information</h2>
+
+            <p>
+                This page uses the Open-Meteo public weather API
+                to display current weather information.
+            </p>
+
+            <p>
+                Choose an option below to retrieve the information
+                you would like to see.
+            </p>
+        </section>
+
+        <section class="weather-navigation">
+
+            <h2>Choose Weather Information</h2>
+
+            <div class="buttons">
+
+                <button type="button" id="temperature-button">
+                    Temperature
+                </button>
+
+                <button type="button" id="conditions-button">
+                    Weather Conditions
+                </button>
+
+            </div>
+
+        </section>
+
+        <section id="weather-results" class="weather-results">
+
+            <h2 id="result-title">Weather Results</h2>
+
+            <p id="loading-message" class="hidden">
+                Loading weather information...
+            </p>
+
+            <p id="error-message" class="error hidden"></p>
+
+            <div id="weather-data"></div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            Weather data provided by
+            <a href="https://open-meteo.com/" target="_blank">
+                Open-Meteo
+            </a>
+        </p>
+    </footer>
+
+    <script src="JS/open-api.js"></script>
+
+</body>
+
+</html>
