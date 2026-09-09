@@ -1,0 +1,163 @@
+/* General page styling */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* Header */
+
+header {
+    background-color: #1f3c88;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    margin-bottom: 1rem;
+}
+
+
+/* Navigation */
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: #3457a4;
+    padding: 0.7rem 1.2rem;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #4d70bd;
+}
+
+
+/* Main content */
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #1f3c88;
+}
+
+
+/* Navigation buttons */
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    background-color: #1f3c88;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3457a4;
+}
+
+button:focus {
+    outline: 3px solid #9db7ed;
+}
+
+
+/* Weather information */
+
+.weather-card {
+    background-color: #eef4ff;
+    border-left: 5px solid #1f3c88;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+.weather-card h3 {
+    margin-top: 0;
+    color: #1f3c88;
+}
+
+.weather-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1f3c88;
+}
+
+
+/* Error and loading messages */
+
+.error {
+    color: #a30000;
+    background-color: #ffe5e5;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background-color: #1f3c88;
+    color: white;
+    padding: 1.5rem;
+}
+
+footer a {
+    color: white;
+}
+
+
+/* Mobile layout */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    section {
+        padding: 1.25rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
