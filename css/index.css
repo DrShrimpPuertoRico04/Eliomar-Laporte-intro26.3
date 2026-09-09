@@ -244,3 +244,31 @@ section h2 {
     padding: 0.5rem 1rem;
   }
 }
+
+#Projects ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+#Projects li {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 8px;
+  flex: 1 1 200px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  #Projects ul {
+    flex-direction: column;
+  }
+
+  #Projects li {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
